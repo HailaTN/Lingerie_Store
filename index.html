@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lingerie Store made with love</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/aefe04a728.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=divice-width, initial-scale=1">
+
+</head>
+<body>
+    <header>
+        <nav>
+          <ul class="container nav">
+            <li>
+              <a href="#" class="logo">Lingerie Store</a>
+            </li>
+            <li>
+              <a href="#new">Новинки</a>
+            </li>
+            <li>
+              <a href="#sets-of-underwear">Комплекты</a>
+            </li>
+            <li>
+                <a href="#underpants">Трусики</a>
+              </li>
+              <li>
+                <a href="#bras">Бюстгальтеры</a>
+              </li>
+            <li>
+              <div class="site-search">
+                <input type="search" id="search-input">
+                <button type="button" id="search-btn" class="fa fa-search"></i>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    <main class="container">
+      <div class="filters">
+        <div class="filters-sort">
+          <label for="sort">Сортировка:</label>
+          <select name="sort" id="sort">
+            <option selected value="alphabet">По алфавиту</option>
+            <option value="expensive">Сначала дорогие</option>
+            <option value="cheap">Сначала дешевые</option>
+            <option value="rating">Рейтинг</option>
+          </select>
+        </div>
+      </div>
+      <section id="shop-items">
+      </section>
+      <p id="nothing-found">Ничего не найдено</p>
+    </main>
+    <footer id="contacts" class="container">
+      <a href="#" class="logo">Lingerie Store made with love</a>
+      <div id="icons">
+        <a href="https://vk.com/" aria-label="VK">
+            <i class="fa-brands fa-vk"></i>
+        </a>
+        <a href="https://www.instagram.com/" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://web.tlgrm.app/" aria-label="Telegram">
+            <i class="fa-brands fa-telegram"></i>
+        </a>
+    </div>
+    </footer>
+    <template id="item-template">
+      <div class="shop-item">
+        <img src="">
+        <div class="content">
+          <div class="tags"></div>
+          <h1></h1>
+          <p></p>
+        </div>
+        <div class="footer">
+          <span class="price"></span>
+          <div class="rating"></div>
+        </div>
+      </div>
+      </div>
+    </template>
+    <script src="script.js"></script>
+  </body>
+</body>
+</html>
